@@ -1,0 +1,143 @@
+body{
+background: #b8b4b4;
+}
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: /*ГРІДИ/////////////*/
+    "wrapper__block-form wrapper__map";
+    grid-template-columns: 630px, 370px;
+}
+.wrapper__block-form__header{
+    position: relative;
+    width: 462px;
+    margin-bottom: 35px;
+    text-align: left;
+    color: #1A1A1A;
+}
+.block-form__header span{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+h3{
+    font-family: 'Avenir Next';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+}
+
+
+
+
+.wrapper__block-form{
+    width: 670px;
+    display: block;
+    margin: 0 auto;
+}
+
+.wrapper__block-form input, select{
+    margin: 0 32px 35px 0;
+    color: #414042;
+    padding: 18px 19px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    height: 64px;
+    width: 299px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+}
+
+.wrapper__block-form textarea{
+    height: 338px;
+    padding: 18px 19px;
+    width: 630px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    border-radius: 8px;
+    color: #414042;
+}
+.wrapper__block-form button{
+    height: 57px;
+    width: 221px;
+    margin-top: 44px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;   
+    background-color: #1A1A1A; 
+}
+.wrapper__block-form button:hover{
+    background-color: white; 
+    color: #1A1A1A;
+}
+
+#map{
+    margin-left: 40px;
+    height: 936px;
+    width: 430px;
+    display: inline-block;
+}
+
+
+
+
+/*МЕДИА-ЗАПРОСЫ*/
+@media(max-width: 1160px){
+    .wrapper{ 
+       display: block;
+       margin: 0 auto;
+    }
+    .wrapper__block-form__header{
+        width: 351px;
+        margin: 0 auto 35px auto;
+    }
+    
+    
+    .wrapper__block-form{
+        width: 100%;
+        text-align: center;
+        margin: 0 0px 0 50px;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    
+    .wrapper__block-form input, select{
+        width: 351px;
+        display: block;
+        margin: 0 auto 37px auto;
+    }
+    
+    .wrapper__block-form textarea{
+        height: 358px;
+        width: 353px;
+        display: block;
+        margin: 0 auto;
+
+    }
+    .wrapper__block-form button{
+        height: 51px;
+        width: 353px;
+    }
+    
+    #map{
+        margin: 30px auto 0 auto;
+        height: 573px;
+        width: 353px;
+        display: block;
+    }
+    
+}
